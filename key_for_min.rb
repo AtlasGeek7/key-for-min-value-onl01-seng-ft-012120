@@ -5,7 +5,9 @@ def key_for_min_value(name_hash)
   min = 1000000
   name_hash.collect { |k,v|
   if v <= min
-    
-  val = k 
+    min = v 
+    val = k
+  end
   }
+  return val
 end
