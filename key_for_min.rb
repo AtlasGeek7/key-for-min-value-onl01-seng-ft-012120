@@ -3,11 +3,12 @@
 
 def key_for_min_value(name_hash)
   min = 1000000
+  key_val = nil
   name_hash.collect { |k,v|
   if v <= min
     min = v 
-    val = k
+    key_val = k
   end
   }
-  return val
+  return key_val
 end
